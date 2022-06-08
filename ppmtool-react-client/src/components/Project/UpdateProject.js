@@ -23,7 +23,7 @@ const UpdateProject = ({ getProject, createProject, project, errors }) => {
 
     useEffect(() => {
         getProject(id, navigate);
-        setDataForm({...dataForm, "id": project.id, "errors": errors});
+        setDataForm({...dataForm, id: project.id, errors: errors});
     }, [getProject, project]); // set "id" as long as get project
 
 
